@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="landing-screen">
+    <div class="firstdiv">Weather Api </div>
+    <button class="BUTTON" onclick="getCurrentLocation()">Fetch Data</button>
+  </div>
+
+    <div id="weather-screen" style="display: none;">
+        <div>
+            <div class="heading"> Welcome To The Weather App </div>
+            <p class="para">Here is your current location</p>
+           <div id="lon-lat"> </div>
+        </div>
+        <div class="secPageContainer">
+            <div id="map"></div>
+            <div id="weather-data">
+            <!-- Weather details will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoZk-6tig1LkmXAL78zQcYxuRHw-jvZPU&libraries=places"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
